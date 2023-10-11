@@ -301,13 +301,14 @@ i.font-size {
     width: 37%;
   }
 }
-/* _____                 _
+/* ____                          _ _/* _____                 _
 | ____|_   _____ _ __ | |_ ___
 |  _| \ \ / / _ \ '_ \| __/ __|
 | |___ \ V /  __/ | | | |_\__ \
 |_____| \_/ \___|_| |_|\__|___/ */
+
 .card_12 {
-  background: url();
+  background: url(https://t3.ftcdn.net/jpg/03/22/30/46/360_F_322304683_7ysRarFkmy2osfPKTOYQv7qTPofKelfb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -388,4 +389,77 @@ i.font-size {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
+}
+/* _
+ / ___|___  _ __ ___  _ __ ___ (_) |_| |_ ___  ___
+| |   / _ \| '_ ` _ \| '_ ` _ \| | __| __/ _ \/ _ \
+| |__| (_) | | | | | | | | | | | | |_| ||  __/  __/
+ \____\___/|_| |_| |_|_| |_| |_|_|\__|\__\___|\___| */
+*/ .team .card {
+  transition: all 0.2s ease-in;
+}
+.team .card img {
+  border-radius: 50%;
+  border: 5px solid #f2f2f2;
+  padding: 6px;
+}
+.team .card:hover img {
+  border: 5px solid #f01847;
+}
+.team .card:hover .ccc {
+  transform: scale(1.1);
+}
+.team .description-sec {
+  width: 65%;
+  margin: auto;
+}
+@media screen and (max-width: 575px) {
+  .team .description-sec {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .team .mob-align {
+    text-align: -webkit-center;
+  }
+}
+.team .anchor-absolute {
+  position: absolute;
+  left: 0;
+  right: 26px;
+  bottom: 18px;
+  z-index: 10;
+}
+@media screen and (max-width: 575px) {
+  .team .anchor-absolute {
+    left: 0;
+    right: 0;
+    bottom: 32px;
+  }
+}
+
+/* _____           _   _
+|  ___|__   ___ | |_| |_ ___ _ __
+| |_ / _ \ / _ \| __| __/ _ \ '__|
+|  _| (_) | (_) | |_| ||  __/ |
+|_|  \___/ \___/ \__|\__\___|_| */
+.footer_10 {
+  background: #050630;
+}
+.footer_10 p,
+.footer_10 a {
+  color: #707070;
+  font-size: 0.9rem;
+}
+.footer_10 hr {
+  border: none;
+  border-top: 1px solid #3e3e3e6e;
+}
+.footer_10 .social_icon {
+  margin: 0 5px;
+  border-radius: 50px;
+}
+.footer_10 .social_icon:hover {
+  /* background: #f01887; */
+  background: #f01847;
 }
