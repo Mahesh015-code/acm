@@ -58,7 +58,7 @@
 .navbar .nav-wrapper .nav .menu-item a:hover {
   background: transparent;
   /* color: #f01887; */
-  color: #f0182a;
+  color: #f01847;
 }
 .navbar .nav-wrapper .nav .menu-item a:hover:after {
   width: 100%;
@@ -157,7 +157,7 @@
   background: #fff;
 }
 .sub-menu > li > a:hover {
-  color: #f01887 !important;
+  color: #f01847 !important;
 }
 .sub-menu li:first-child {
   padding-top: 13px;
@@ -245,14 +245,15 @@ i.font-size {
   margin: 0;
 }
 .home_banner .section_content .heading {
-  /* color: #f01887; */
+  /* color: #f01847; */
   /* color: #ac238e; */
 }
 .home_banner .section_content .present {
   position: relative;
   margin: 20px auto;
   width: 100%;
-  color: #000;
+  color: white;
+  text-shadow: 2px 2px 8px gray;
   /* font-weight: ; */
 }
 .home_banner .section_content .present::before,
@@ -300,6 +301,17 @@ i.font-size {
   .home_banner .section_content .present::after {
     width: 37%;
   }
+}
+
+.about_athe .section_content {
+  align-items: center;
+}
+.about_athe .section_content img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.about_athe .section_content .heading {
+  margin-bottom: 20px;
 }
 /* ____                          _ _/* _____                 _
 | ____|_   _____ _ __ | |_ ___
@@ -390,6 +402,27 @@ i.font-size {
   display: flex;
   flex-wrap: wrap;
 }
+.book_seats .section_content {
+  background: url(https://t3.ftcdn.net/jpg/03/22/30/46/360_F_322304683_7ysRarFkmy2osfPKTOYQv7qTPofKelfb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 40px;
+}
+.book_seats .section_content .heading,
+.book_seats .section_content .sub-heading {
+  margin: 0;
+}
+.book_seats .section_content .book_now_btn {
+  border-radius: 26px;
+  background: #f01847;
+  margin: 0 5px;
+}
 /* _
  / ___|___  _ __ ___  _ __ ___ (_) |_| |_ ___  ___
 | |   / _ \| '_ ` _ \| '_ ` _ \| | __| __/ _ \/ _ \
@@ -406,7 +439,7 @@ i.font-size {
 .team .card:hover img {
   border: 5px solid #f01847;
 }
-.team .card:hover .ccc {
+.team .card:hover .ccc gray {
   transform: scale(1.1);
 }
 .team .description-sec {
@@ -462,4 +495,50 @@ i.font-size {
 .footer_10 .social_icon:hover {
   /* background: #f01887; */
   background: #f01847;
+}
+.schedule .tab_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.schedule .tab_links .tab_link {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid #f2f2f2;
+  padding-bottom: 0;
+}
+.schedule .tab_links .tab_link p {
+  margin-bottom: 10px;
+}
+.schedule .tab_link.active {
+  border-bottom: 3px solid #f01847;
+}
+.schedule .tab_link.active a {
+  color: #f01847;
+}
+.schedule .tabs {
+  padding-top: 3rem;
+}
+.schedule .lists {
+  list-style: none;
+}
+.schedule .lists .list_title {
+  color: #f01847;
+}
+.schedule .lists .list_content {
+  color: #606374;
+}
+
+.adhi {
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px gray;
+  /* color: #160480; */
+  /* font-weight: bolder; */
+}
+.space {
+  padding: 8rem 0 0 0;
 }
