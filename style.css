@@ -323,6 +323,7 @@ i.font-size {
   background: url(https://t3.ftcdn.net/jpg/03/22/30/46/360_F_322304683_7ysRarFkmy2osfPKTOYQv7qTPofKelfb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  transition: background 0.5s ease;
 }
 .card_12 .section-subtitle {
   font-size: 2opx;
@@ -332,6 +333,7 @@ i.font-size {
   padding: 12px;
   border-radius: 20px;
   margin: 0 4px;
+  transition: background 0.5s ease;
 }
 @media screen and (min-width: 992px) {
   .card_12 .card-inner {
@@ -429,12 +431,14 @@ i.font-size {
 | |__| (_) | | | | | | | | | | | | |_| ||  __/  __/
  \____\___/|_| |_| |_|_| |_| |_|_|\__|\__\___|\___| */
 */ .team .card {
-  transition: all 0.2s ease-in;
+  /* transition: all 0.2s ease; */
+  transition: all 0.5s ease;
 }
 .team .card img {
   border-radius: 50%;
   border: 5px solid #f2f2f2;
   padding: 6px;
+  transition: all 0.5s ease;
 }
 .team .card:hover img {
   border: 5px solid #f01847;
@@ -541,4 +545,8 @@ i.font-size {
 }
 .space {
   padding: 8rem 0 0 0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
