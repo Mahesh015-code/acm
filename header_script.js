@@ -21,3 +21,11 @@
      /* $('html, body').animate({
       scrollTop: $($(this).attr('data-section')).offset().top - $(".navbarhp").height()
     }, 500);*/
+
+var typed = new Typed(".animate",{
+    string: ["Unlock Tomorrow's Possibilities","Unlock"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+
+})

@@ -61,7 +61,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel="stylesheet" href="https://use.typekit.net/mfv8kad.css">
 <link rel="stylesheet" href="https://event.india.acm.org/site-skin/css/awesome-css">		
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 <script type="text/javascript">
@@ -71,6 +71,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
   aw2['path']="https://event.india.acm.org/hackathon/"
 </script>
 <script src="https://event.india.acm.org/awesome-js/js/all-js" defer=""></script>		
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 <script type="spa/axn" axn="ga.load" ga_tracking_id=""></script><link href="https://event.india.acm.org/hackathon/css/newskin-c/3" rel="stylesheet" as="style">
 
@@ -380,6 +381,9 @@ spa.root_api.lazycall =function(o){
    
    
 </script>
+<script>
+  AOS.init();
+</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -404,6 +408,7 @@ spa.root_api.lazycall =function(o){
             	<li class="menu-item"> <a href="#about" data-section="#about">About</a> </li>
               <li class="menu-item"> <a href="#theme" data-section="#theme">Theme</a> </li>
               <li class="menu-item"> <a href="#committee" data-section="#committee">Faculty Council</a> </li>
+              <li class="menu-item"> <a href="#schedule" data-section="#committee">Schedule</a> </li>
               <li class="menu-item"> <a href="./team.html" data-section="#committee">Team</a> </li>
             	<li class="menu-item"> <a href="#registration_link" data-section="#registration_link" class="">Registration</a> </li>
               <li class="menu-item"><a href="#contact" data-section="#contact">Contact Us</a></li> </ul>
@@ -455,14 +460,35 @@ spa.root_api.lazycall =function(o){
   
   <section class="home_banner">
   	<div classs="container-fluid">
-    	<div class="section_content">
-      	<p class="brand-white font-size-largest heading  text-center adhi">APEC Student Chapter</p>
+    	<div class="section_content" data-aos=="zoom-out" data-aos-duration="500" >
+      	<p class="brand-white font-size-largest heading  text-center adhi" >APEC Student Chapter</p>
         <p class="brand-white font-size-base text-center present">Presents</p>
         <h2 class="heading brand-danger font-size-huge font-ultrabold text-center">Innovista 2023</h2>
         <!-- <p class="brand-white font-size-larger text-center">In Technology</p>         -->
-        <p class="brand-white font-size-larger text-center">Unlock Tomorrow's Possibilities</p>        
+        <p class="brand-white font-size-larger text-center"><span class="animate"></span></p>        
       </div>
     </div>
+
+    <script>
+      var typed = new Typed(".animate",{
+      // strings: ["Unlock Tomorrow's Possibilities","unlock"],
+      strings: [
+        "Vision, innovation, progress.",
+        "Embrace change, adapt.",
+        "Boundless, dare to dream.",
+        "Today holds the key.",
+        "Seize opportunities, take action.",
+        "Learn, grow, journey.",
+        "Uncover new horizons daily.",
+        "Endless imagination's boundaries.",
+        "Shape a brighter future.",
+        "Today's actions, tomorrow's possibilities."
+      ],
+      typeSpeed: 60,
+      backSpeed: 50,
+      loop: true
+      })
+    </script>
   
   </section>
 
@@ -473,9 +499,9 @@ spa.root_api.lazycall =function(o){
         <div class="col-xs-12 col-sm-12 col-md-6">
           <img decoding="async" src="./images/APEC_LIB_2.png" alt="About Athenahacks" loading="lazy" width="auto" height="auto">
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6">
-          <h2 class="heading font-size-huge text-capitalize font-semibold line-height-1 gray-darker">About Innovista</h2>
-          <p class="sub-heading font-size-small gray">Innovista is an 1st edition of APEC ACM Student Chapter for IT hosted by Adhiparasakthi Engineering College, Melmaruvathur. Innovista is a Intra Departmental Student Competition and Technical Workshop igniting ideas who are making an impact today and inspiring tomorrow. It was started with an ideology to support and motivate the students in the field of IT. It aims at providing students to develop innovative practical solutions to pressing real-world problems.</p>
+        <div class="col-xs-12 col-sm-12 col-md-6" data-aos="fade-in">
+          <h2 class="heading font-size-huge text-capitalize font-semibold line-height-1 gray-darker" data-aos="fade-right" data-aos-duration="500">About Innovista</h2>
+          <p class="sub-heading font-size-small gray" data-aos="fade-in">Innovista is an 1st edition of APEC ACM Student Chapter for IT hosted by Adhiparasakthi Engineering College, Melmaruvathur. Innovista is a Intra Departmental Student Competition and Technical Workshop igniting ideas who are making an impact today and inspiring tomorrow. It was started with an ideology to support and motivate the students in the field of IT. It aims at providing students to develop innovative practical solutions to pressing real-world problems.</p>
         </div>
       </div>
     </div>
@@ -485,8 +511,8 @@ spa.root_api.lazycall =function(o){
   <section class="psgtech">
   <div class="gap-7"></div>
   	<div class="container">
-    	<div class="section_content">
-      	<h2 class="heading font-size-huge text-capitalize font-semibold line-height-1 gray-darker">About APEC</h2>
+    	<div class="section_content" data-aos="fade-in">
+      	<h2 class="heading font-size-huge text-capitalize font-semibold line-height-1 gray-darker" data-aos="fade-right" data-aos-duration="500">About APEC</h2>
         <p class="sub-heading font-size-small gray">Adhiparasakthi Engineering College, situated in Melmaruvathur, Tamil Nadu, is a dedicated institution committed to nurturing the next generation of engineers with a unique blend of values and technological prowess. Since its inception, this college has been steadfast in its mission to cultivate engineers who not only excel in their chosen fields but also possess a deep sense of service and spirituality.
 
 Established with the vision of advancing the growth of society at large, Adhiparasakthi Engineering College places a strong emphasis on the adoption of cutting-edge technologies, ensuring their sustainability and relevance in an ever-evolving world. The institution's unwavering dedication to academic excellence and holistic development sets it apart in the educational landscape.
@@ -512,7 +538,7 @@ Established with the vision of advancing the growth of society at large, Adhipar
   
       <div class="row mar-b-5">
       	<div class="col-12 col-md-12 col-xl-12 text-center">
-          <h2 class="no-margin-bottom font-bold brand-white">Technical & Non-Technical Events</h2>
+          <h2 class="no-margin-bottom font-bold brand-white" data-aos="fade-in">Technical & Non-Technical Events</h2>
         </div>
       </div>
       
@@ -758,7 +784,7 @@ Established with the vision of advancing the growth of society at large, Adhipar
               </li>
               <li class="card-text font-size-small gray-dark font-size-base">
                 	<p class="list_title no-margin font-size-base font-bold">Schedule</p>
-                  <p class="list_content font-size-base"><strong>OCT 16, 2023 – </strong> <a href=""></a>
+                  <p class="list_content font-size-base"><strong>OCT 26, 2023 – </strong> <a href=""></a>
 <br>
 <!-- <strong>OCT 13, 2023 – </strong>Result Announcement by mail--></p> 
               </li>
@@ -1031,120 +1057,6 @@ Established with the vision of advancing the growth of society at large, Adhipar
       </div>
     </div>
   </section>
-<!-- 
-<section class="uiblock team pad-y-10" id="committee">
-    <div class="container">
-      <div class="row justify-content-center animate delay-10ms slide-up ">
-        <div class="col-md-12">
-          <div class="text-center">
-            <h2 class=" font-bold">Student Co-Ordinators</h2>
-          </div>
-          <div class="gap-5"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-      	<div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/Group-17953.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Swetha S</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">4th year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Software Systems)</p>
-                    
-                  </div>
-             </div>
-          </div><div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/Ashvika.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Asvika M</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">4th year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Cyber Security)</p>
-                    
-                  </div>
-             </div>
-          </div><div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/mahila.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Mahizha N S</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">3rd year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Software Systems)</p>
-                    
-                  </div>
-             </div>
-          </div><div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/samyuktha.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Samyugtha M</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">3rd year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Data Science)</p>
-                    
-                  </div>
-             </div>
-          </div><div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/Group-17994.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Nithiya Shri M</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">4th year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Cyber Security)</p>
-                    
-                  </div>
-             </div>
-          </div><div class="col-md-3 col-6 mob-align mar-b-8 animate delay-10ms slide-up">
-             <div class="card">
-              <div class="text-center ccc">
-                 <img decoding="async" src="https://event.india.acm.org/wp-content/uploads/2023/09/Group-17995.png" class="border-radius" width="180" height="180" loading="lazy" alt="">
-              </div>
-                 <div class="gap-2"></div>
-                 <div class="member-name text-center ">
-                   <h6 class="font-bold font-size-big no-margin-bottom">Sherin J A</h6>
-                 </div>
-                  <div class="designation text-center ">
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">3rd year M.Sc</p>
-                    
-                    <p class="font-size-smallest no-padding no-padding-bottom gray-dark no-margin-bottom">(Theoretical Computer science)</p>
-                    
-                  </div>
-             </div>
-          </div>
-      </div>
-  	</div>
-  </section> -->
   
 		 <script type="spa/axn" axn="core.run_script">
       
@@ -1292,5 +1204,10 @@ SH 115, Melmaruvathur, Tamil Nadu 603319</p>
     </div>
   </footer>
 </div> 
+  <!-- aos data -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
