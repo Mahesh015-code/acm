@@ -220,7 +220,15 @@ i.font-size {
 #return-to-top:hover i {
   color: #fff;
 }
+                    /* _ _   _
+ ___  ___ _ __ ___ | | | | |__   __ _ _ __
+/ __|/ __| '__/ _ \| | | | '_ \ / _` | '__|
+\__ \ (__| | | (_) | | | | |_) | (_| | |
+|___/\___|_|  \___/|_|_| |_.__/ \__,_|_| */
 
+body::-webkit-scrollbar{ width: 0.5rem; }
+body::-webkit-scrollbar-track{background-color: whitesmoke;}
+body::-webkit-scrollbar-thumb{background-color: #f01847;}
 .home_banner {
   background: url(./images/APEC_Library.jpg);
   background-repeat: no-repeat;
