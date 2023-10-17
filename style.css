@@ -245,7 +245,7 @@ i.font-size {
   margin: 0;
 }
 .home_banner .section_content .heading {
-  /* color: #f01847; */
+  color: #f01847;
   /* color: #ac238e; */
 }
 .home_banner .section_content .present {
@@ -547,6 +547,15 @@ i.font-size {
   padding: 8rem 0 0 0;
 }
 
-html{
+/* html{
   scroll-behavior: smooth;
+} */
+
+.dept{
+  font-size: xx-large;
+  color: #000;
+}
+
+.om{
+  color: #f01847;
 }
