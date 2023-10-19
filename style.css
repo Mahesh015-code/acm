@@ -1,5 +1,6 @@
 .navbar {
   margin-bottom: 0px !important;
+  font-family: 'Courgette', cursive;
 }
 .navbar .logo-img {
   height: 60px;
@@ -252,10 +253,7 @@ body::-webkit-scrollbar-thumb{background-color: #f01847;}
 .home_banner .section_content h2 {
   margin: 0;
 }
-.home_banner .section_content .heading {
-  color: #f01847;
-  /* color: #ac238e; */
-}
+.home_banner .section_content .heading { color: #f01847; }
 .home_banner .section_content .present {
   position: relative;
   margin: 20px auto;
@@ -549,6 +547,7 @@ body::-webkit-scrollbar-thumb{background-color: #f01847;}
   font-weight: bolder;
   text-shadow: 2px 2px 8px gray;
   /* color: #160480; */
+  color: #3a3089;
   /* font-weight: bolder; */
 }
 .space {
@@ -561,9 +560,15 @@ body::-webkit-scrollbar-thumb{background-color: #f01847;}
 
 .dept{
   font-size: xx-large;
-  color: #000;
+  color:#e16f27;
+  font-weight: bold;
+
 }
 
 .om{
   color: #f01847;
+}
+
+.animate{
+  font-family: 'Courgette', cursive;
 }
